@@ -1,0 +1,15 @@
+# Private source material and operational case data must never enter Git.
+inbox/*
+!inbox/.gitkeep
+private/*
+!private/.gitkeep
+workspace/agencies/*
+!workspace/agencies/_template/
+!workspace/agencies/_template/**
+
+# Local and generated files.
+tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+
