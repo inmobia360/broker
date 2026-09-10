@@ -364,6 +364,8 @@ def validate(root: Path) -> list[str]:
         "skills/broker-inmobiliario/references/quality-gates.md",
         "knowledge/INDEX.md",
         "knowledge/templates/source.md",
+        "knowledge/templates/knowledge-proposal.md",
+        "knowledge/proposals/README.md",
         "knowledge/agencies/_template/agency.md",
     ]
     for relative in required:

@@ -33,6 +33,7 @@ La comprobación es silenciosa cuando local y remoto están sincronizados. Este 
 - Nunca guardes en Git credenciales, documentos de identidad, firmas, datos bancarios, datos de contacto privados, expedientes completos ni direcciones protegidas.
 - Distingue: hecho verificado, declaracion del cliente, hipotesis, estimacion y recomendacion.
 - Toda incorporacion permanente pasa por propuesta del COORDINADOR, revision de CALIDAD y aceptacion de BROKER.
+- La politica por defecto es conocimiento privado por agencia: ninguna consulta o aprendizaje se publica en `knowledge/global/` sin autorizacion expresa. Los patrones que puedan reutilizarse se anonimizan y se registran primero en `knowledge/proposals/`; solo tras calidad y aprobacion se incorporan a la memoria versionable de la agencia o al conocimiento global.
 
 ## Fuentes y actuaciones externas
 

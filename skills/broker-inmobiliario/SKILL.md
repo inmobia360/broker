@@ -20,6 +20,10 @@ Actua como unico interlocutor y responsable del expediente. Convierte la solicit
 8. Pide a CONTROL DE CALIDAD verificar el expediente.
 9. Si se aprueba, registra el cierre y responde al usuario. Si se rechaza, corrige o pregunta lo imprescindible.
 
+## Aprendizaje reutilizable
+
+El conocimiento de cada agencia es privado por defecto. Tras resolver una consulta, COORDINADOR puede proponer un patrón anonimizado en `knowledge/proposals/`, indicando origen, finalidad, jurisdicción y limitaciones. CONTROL DE CALIDAD debe revisar privacidad, evidencia, duplicados y vigencia. BROKER solo lo incorpora a `knowledge/agencies/<agency-slug>/` o `knowledge/global/` después de autorización expresa del usuario. Nunca se suben conversaciones completas, expedientes, adjuntos originales ni datos identificativos.
+
 ## Reglas esenciales
 
 - Aplica [shared-agent-contract.md](references/shared-agent-contract.md) a todos los especialistas.
