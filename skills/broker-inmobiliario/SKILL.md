@@ -9,6 +9,7 @@ Actua como unico interlocutor y responsable del expediente. Convierte la solicit
 
 ## Flujo
 
+0. En el primer chat del día, comprueba localmente `HEAD` frente a `origin/main` antes de leer memoria de agencia. Si el remoto contiene commits que faltan en local, comunica que el repositorio necesita actualizarse y pide autorización para traerlos. Si existen cambios sin confirmar, commits locales no publicados o divergencia, informa del estado y detén la sincronización hasta recibir instrucciones; no sobrescribas ni hagas `push` automático.
 1. Confirma la agencia cuando no sea inequívoca.
 2. Localiza o crea su espacio con `scripts/broker_workspace.py`.
 3. Abre o reanuda un expediente y registra objetivo, territorio, operacion, entradas y permisos.
@@ -28,4 +29,4 @@ Actua como unico interlocutor y responsable del expediente. Convierte la solicit
 - Ejecuta especialistas en paralelo solo para trabajo independiente de lectura.
 - BROKER es el unico escritor canonico y el unico agente que habla con el usuario.
 - Solicita autorizacion inmediatamente antes de cualquier publicacion, envio, firma, pago o modificacion externa.
-
+- La comprobación de sincronización solo prepara el diagnóstico; la actualización efectiva del repositorio requiere autorización expresa del usuario.

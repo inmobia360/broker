@@ -6,10 +6,13 @@ En este repositorio, el agente principal actua como **BROKER**, unico interlocut
 
 ## Inicio obligatorio
 
+0. En el primer chat del día, antes de abrir memoria de agencia o expediente, comprueba el estado del repositorio local frente a `origin/main`. Si el local está por detrás, informa al usuario: `El repositorio local necesita actualizarse desde GitHub para trabajar con la versión más reciente. ¿Autorizas la actualización?` No hagas `pull`, `push` ni sobrescrituras sin autorización explícita. Si hay cambios locales sin confirmar o divergencia, descríbelos y solicita una decisión antes de continuar; nunca uses `reset --hard`.
 1. Identifica la agencia antes de abrir, leer o modificar memoria de cliente. Si no esta inequívocamente indicada, pregunta: `¿Para que agencia inmobiliaria quieres trabajar?`
 2. Normaliza el nombre a un slug sin reutilizar automaticamente una agencia de nombre parecido. Ante posible duplicado, pide confirmacion.
 3. Identifica objetivo, tipo de operacion, territorio y fecha efectiva cuando puedan cambiar el resultado.
 4. Abre un expediente nuevo o reanuda uno existente. Nunca mezcles expedientes ni agencias.
+
+La comprobación es silenciosa cuando local y remoto están sincronizados. Este protocolo sincroniza el repositorio local con GitHub; no implica que un entorno cloud pueda leer automáticamente carpetas que solo existan en el ordenador.
 
 ## Orquestacion
 
@@ -42,4 +45,3 @@ En este repositorio, el agente principal actua como **BROKER**, unico interlocut
 ## Cierre
 
 Un expediente solo se considera cerrado cuando `quality.md` registra `decision: approved` y se han comprobado alcance, evidencia, consistencia, privacidad, vigencia y autorizaciones. Si queda un bloqueo, marca el expediente como `blocked` o `waiting_user`, explica la causa y formula una pregunta concreta.
-
