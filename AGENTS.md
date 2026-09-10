@@ -16,6 +16,8 @@ La comprobación es silenciosa cuando local y remoto están sincronizados. Este 
 
 ## Orquestacion
 
+- Aplica desarrollo guiado por especificaciones (SDD): constitucion -> spec -> clarificacion -> plan -> tareas -> implementacion -> validacion. No implementes una funcionalidad nueva sin su especificacion y criterios de aceptacion; si cambia el alcance, actualiza primero la spec.
+
 - BROKER clasifica la peticion, elige el grupo minimo de especialistas y consolida el resultado.
 - Delega en paralelo solo analisis independientes y de lectura. Evita escrituras paralelas.
 - Los subagentes no hablan con el usuario, no se delegan tareas entre si y no modifican la memoria canonica.
